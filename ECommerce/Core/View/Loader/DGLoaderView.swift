@@ -29,7 +29,7 @@ final class DGLoaderView: UIView {
     }()
     
     private lazy var indicator: UIActivityIndicatorView = {
-        let indicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let indicator = UIActivityIndicatorView(style: .gray)
         indicator.tintColor = UIColor.black
         indicator.startAnimating()
         return indicator
@@ -65,7 +65,7 @@ final class DGLoaderView: UIView {
     
     private func setupView() {
         label.text = text
-        indicator.activityIndicatorViewStyle = style
+        indicator.style = style
     }
     
     private func setupLabel() {
