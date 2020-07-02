@@ -29,6 +29,9 @@ class HomeViewBinderDataSource<Changeset: SectionedDataSourceChangeset>: TableVi
         if let viewModel = viewModel as? ProductCellViewModel,
             let cell = tableView.dequeueReusableCell(withIdentifier: ProductTableViewCell.reuseIdentifier) as? ProductTableViewCell {
             return cell.bind(viewModel: viewModel)
+        } else if let viewModel = viewModel as? CategoriesCellViewModel,
+            let cell = tableView.dequeueReusableCell(withIdentifier: CategoriesTableViewCell.reuseIdentifier) as? CategoriesTableViewCell {
+            return cell.bind(viewModel: viewModel)
         } else {
             return UITableViewCell()
         }

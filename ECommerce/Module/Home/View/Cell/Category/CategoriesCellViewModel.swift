@@ -7,10 +7,8 @@ Copyright (c) 2020 DAGUCI
 
 */
 
-import Foundation
+import Bond
 
-struct Category: Decodable {
-    var id: Int
-    var imageUrl: URL?
-    var name: String?
+struct CategoriesCellViewModel: CellInterface {
+    var items: MutableObservableArray2D<String?, CellInterface>
 }

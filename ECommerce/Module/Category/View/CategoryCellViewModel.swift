@@ -9,8 +9,7 @@ Copyright (c) 2020 DAGUCI
 
 import Foundation
 
-struct Category: Decodable {
-    var id: Int
-    var imageUrl: URL?
-    var name: String?
+struct CategoryCellViewModel: CellInterface {
+    var title: String?
+    var imageURL: URL?
 }

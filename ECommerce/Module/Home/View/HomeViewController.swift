@@ -38,6 +38,11 @@ private extension HomeViewController {
             UINib(nibName: String(describing: ProductTableViewCell.self),
                   bundle: Bundle(for: ProductTableViewCell.self)),
             forCellReuseIdentifier: ProductTableViewCell.reuseIdentifier)
+
+        tableView.register(
+            UINib(nibName: String(describing: CategoriesTableViewCell.self),
+                  bundle: Bundle(for: CategoriesTableViewCell.self)),
+            forCellReuseIdentifier: CategoriesTableViewCell.reuseIdentifier)
     }
 }
 
@@ -46,3 +51,4 @@ private extension HomeViewController {
         viewModel.outputs.items.bind(to: tableView, using: HomeViewBinderDataSource())
     }
 }
+

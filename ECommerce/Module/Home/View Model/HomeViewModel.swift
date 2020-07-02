@@ -69,10 +69,24 @@ private extension HomeViewModel {
 
 extension HomeViewModel {
     func sectionCategory(categories: [Category]) -> Array2D<String?, CellInterface>.Section {
-        let items: [CellInterface] = []
+        
+        let categoryItems = categories.map({
+            return CategoryCellViewModel(
+                title: $0.name,
+                imageURL:  $0.imageUrl)
+        })
+        let categoryItemsSection = Array2D<String?, CellInterface>.Section(
+            metadata: nil,
+            items: categoryItems)
+        let categoryCellItems =  MutableObservableArray2D<String?, CellInterface>(Array2D<String?, CellInterface>(sections: [
+            categoryItemsSection
+        ]))
+        let categoriesItems = CategoriesCellViewModel(items: categoryCellItems)
+        let items: [CellInterface] = [categoriesItems]
         let section = Array2D<String?, CellInterface>.Section(
             metadata: nil,
             items: items)
+        
         return section
     }
     
