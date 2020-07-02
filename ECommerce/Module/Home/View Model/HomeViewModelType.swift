@@ -9,6 +9,7 @@ Copyright (c) 2020 DAGUCI
 
 import Foundation
 import Bond
+import ReactiveKit
 
 protocol HomeViewModelType {
     var inputs: HomeViewModelInputs { get }
@@ -17,8 +18,10 @@ protocol HomeViewModelType {
 
 protocol HomeViewModelInputs {
     func onViewDidLoad()
+    func onSearchBeginEditing()
 }
 
 protocol HomeViewModelOutputs: class {
     var items: MutableObservableArray2D<String?, CellInterface> { get }
+    var showProductsSignal: Signal<[Product], Never> { get }
 }

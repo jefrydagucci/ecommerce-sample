@@ -12,6 +12,11 @@ import UIKit
 final class HomeViewController: UIViewController {
     @IBOutlet weak private var tableView: UITableView!
     
+    private lazy var searchBar: UISearchBar = {
+        let searchBar = UISearchBar()
+        return searchBar
+    }()
+    
     var viewModel: HomeViewModelType
     init(viewModel: HomeViewModelType) {
         self.viewModel = viewModel
@@ -26,13 +31,18 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerCells()
+        configureView()
         bind()
         viewModel.inputs.onViewDidLoad()
     }
 }
 
 private extension HomeViewController {
+    func configureView() {
+        registerCells()
+        configureSearchBar()
+    }
+    
     func registerCells() {
         tableView.register(
             UINib(nibName: String(describing: ProductTableViewCell.self),
@@ -44,11 +54,26 @@ private extension HomeViewController {
                   bundle: Bundle(for: CategoriesTableViewCell.self)),
             forCellReuseIdentifier: CategoriesTableViewCell.reuseIdentifier)
     }
+    
+    func configureSearchBar() {
+        self.navigationItem.titleView = searchBar
+        searchBar.delegate = self
+    }
 }
 
 private extension HomeViewController {
     func bind() {
         viewModel.outputs.items.bind(to: tableView, using: HomeViewBinderDataSource())
+        viewModel.outputs.showProductsSignal
+            .bind(to: self) { (vc, products) in
+                ProductListWireframe().show(products: products, from: vc)
+                vc.searchBar.endEditing(true)
+        }.dispose(in: bag)
     }
 }
 
+extension HomeViewController: UISearchBarDelegate {
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        viewModel.inputs.onSearchBeginEditing()
+    }
+}

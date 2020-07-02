@@ -9,13 +9,22 @@ Copyright (c) 2020 DAGUCI
 
 import Foundation
 import Bond
+import ReactiveKit
 
 final class HomeViewModel: HomeViewModelOutputs {
     
     var items: MutableObservableArray2D<String?, CellInterface> = MutableObservableArray2D<String?, CellInterface>(Array2D<String?, CellInterface>())
+    var showProductsSignal: Signal<[Product], Never> {
+        return showProductsSubject.toSignal()
+    }
     
     var homeService: HomeServiceInterface
+    private var showProductsSubject = Subject<[Product], Never>()
     private var processingGroup = DispatchGroup()
+    private var homeModel: HomeModel?
+    private var products: [Product] {
+        return homeModel?.productPromo ?? []
+    }
     
     init(service: HomeServiceInterface) {
         self.homeService = service
@@ -25,6 +34,10 @@ final class HomeViewModel: HomeViewModelOutputs {
 extension HomeViewModel: HomeViewModelInputs {
     func onViewDidLoad() {
         fetch()
+    }
+    
+    func onSearchBeginEditing() {
+        showProductsSubject.send(products)
     }
 }
 
@@ -48,6 +61,7 @@ private extension HomeViewModel {
             switch result {
             case .success(let responseModel):
                 homeModel = responseModel.first?.data
+                self.homeModel = homeModel
             case .failure:
                 #warning("unhandled error")
             }
