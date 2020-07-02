@@ -9,7 +9,7 @@ Copyright (c) 2020 DAGUCI
 
 import Foundation
 
-final class HomeService {
+final class HomeService: HomeServiceInterface {
     
     struct EndPoint {
         static let home = "https://private-4639ce-ecommerce56.apiary-mock.com/home"

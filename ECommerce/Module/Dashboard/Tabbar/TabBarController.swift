@@ -24,7 +24,8 @@ final class TabBarController: UITabBarController {
     }
     
     var homeVC: UINavigationController = {
-        let vc = HomeViewController()
+        let vc = HomeViewController(
+            viewModel: HomeViewModel(service: HomeService()))
         vc.tabBarItem = UITabBarItem(title: vc.title, image: nil, selectedImage: nil)
         let navigationController = DGNavigationController(rootViewController: vc)
         return navigationController

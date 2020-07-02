@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AEFFF022472287D4EF0EE40 /* Pods_ECommerceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA2213447228093ADB12D49 /* Pods_ECommerceTests.framework */; };
 		94725EFD24AC9C0E0013D91D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725EFC24AC9C0E0013D91D /* AppDelegate.swift */; };
 		94725F0624AC9C120013D91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94725F0524AC9C120013D91D /* Assets.xcassets */; };
 		94725F0924AC9C120013D91D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94725F0724AC9C120013D91D /* LaunchScreen.storyboard */; };
@@ -38,8 +39,19 @@
 		94725F7424AD09370013D91D /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725F7324AD09370013D91D /* ResponseModel.swift */; };
 		94725F7924AD0B070013D91D /* MockHome.json in Resources */ = {isa = PBXBuildFile; fileRef = 94725F7824AD0B070013D91D /* MockHome.json */; };
 		94725F7A24AD0D250013D91D /* HomeServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725F7624AD09E10013D91D /* HomeServiceTest.swift */; };
+		94725F7E24AD6E440013D91D /* CellInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725F7D24AD6E440013D91D /* CellInterface.swift */; };
+		94725F8024AD9A610013D91D /* HomeServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725F7F24AD9A610013D91D /* HomeServiceInterface.swift */; };
+		94725F8D24ADBAC40013D91D /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725F8B24ADBAC40013D91D /* CategoriesTableViewCell.swift */; };
+		94725F8E24ADBAC40013D91D /* CategoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94725F8C24ADBAC40013D91D /* CategoriesTableViewCell.xib */; };
+		94725F9424ADBBEC0013D91D /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725F9224ADBBEC0013D91D /* ProductTableViewCell.swift */; };
+		94725F9524ADBBEC0013D91D /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94725F9324ADBBEC0013D91D /* ProductTableViewCell.xib */; };
+		94725F9724ADBE400013D91D /* ProductCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725F9624ADBE3F0013D91D /* ProductCellViewModel.swift */; };
+		94725F9924ADBF150013D91D /* UIImage+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725F9824ADBF150013D91D /* UIImage+URL.swift */; };
+		94725F9B24ADC13C0013D91D /* UIImage+Tint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725F9A24ADC13C0013D91D /* UIImage+Tint.swift */; };
+		94725F9E24ADC1DC0013D91D /* CoreImageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725F9D24ADC1DC0013D91D /* CoreImageFactory.swift */; };
+		94725FA424ADC6A60013D91D /* HomeViewBinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725FA324ADC6A60013D91D /* HomeViewBinderDataSource.swift */; };
+		94725FA624ADC7DB0013D91D /* UIView+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725FA524ADC7DB0013D91D /* UIView+identifier.swift */; };
 		BA565CD02C7FE04CACE56367 /* Pods_ECommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DC2B9CD2BF2F9CA1D63924 /* Pods_ECommerce.framework */; };
-		DC5A7731CB87E6E3455654DA /* libPods-ECommerceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B06C4F1BDC3403BA3B2511 /* libPods-ECommerceTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +66,7 @@
 
 /* Begin PBXFileReference section */
 		00E42B268D897D0A2DAF88FF /* Pods-ECommerceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECommerceTests.release.xcconfig"; path = "Target Support Files/Pods-ECommerceTests/Pods-ECommerceTests.release.xcconfig"; sourceTree = "<group>"; };
-		05B06C4F1BDC3403BA3B2511 /* libPods-ECommerceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ECommerceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA2213447228093ADB12D49 /* Pods_ECommerceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECommerceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85ECBB854240D16C674104AB /* Pods-ECommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECommerceTests.debug.xcconfig"; path = "Target Support Files/Pods-ECommerceTests/Pods-ECommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93DC2B9CD2BF2F9CA1D63924 /* Pods_ECommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94725EF924AC9C0E0013D91D /* ECommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +104,18 @@
 		94725F7324AD09370013D91D /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		94725F7624AD09E10013D91D /* HomeServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceTest.swift; sourceTree = "<group>"; };
 		94725F7824AD0B070013D91D /* MockHome.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockHome.json; sourceTree = "<group>"; };
+		94725F7D24AD6E440013D91D /* CellInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellInterface.swift; sourceTree = "<group>"; };
+		94725F7F24AD9A610013D91D /* HomeServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceInterface.swift; sourceTree = "<group>"; };
+		94725F8B24ADBAC40013D91D /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		94725F8C24ADBAC40013D91D /* CategoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesTableViewCell.xib; sourceTree = "<group>"; };
+		94725F9224ADBBEC0013D91D /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		94725F9324ADBBEC0013D91D /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		94725F9624ADBE3F0013D91D /* ProductCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellViewModel.swift; sourceTree = "<group>"; };
+		94725F9824ADBF150013D91D /* UIImage+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+URL.swift"; sourceTree = "<group>"; };
+		94725F9A24ADC13C0013D91D /* UIImage+Tint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Tint.swift"; sourceTree = "<group>"; };
+		94725F9D24ADC1DC0013D91D /* CoreImageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageFactory.swift; sourceTree = "<group>"; };
+		94725FA324ADC6A60013D91D /* HomeViewBinderDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBinderDataSource.swift; sourceTree = "<group>"; };
+		94725FA524ADC7DB0013D91D /* UIView+identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+identifier.swift"; sourceTree = "<group>"; };
 		A5E4EDA196E45CC193B73F99 /* Pods-ECommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECommerce.release.xcconfig"; path = "Target Support Files/Pods-ECommerce/Pods-ECommerce.release.xcconfig"; sourceTree = "<group>"; };
 		E589A22368F1D4F52DFFB968 /* Pods-ECommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECommerce.debug.xcconfig"; path = "Target Support Files/Pods-ECommerce/Pods-ECommerce.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC5A7731CB87E6E3455654DA /* libPods-ECommerceTests.a in Frameworks */,
+				0AEFFF022472287D4EF0EE40 /* Pods_ECommerceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +185,7 @@
 		94725F1E24ACAF4A0013D91D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				94725F9C24ADC1C70013D91D /* Factory */,
 				94725F6E24AD07770013D91D /* Model */,
 				94725F1F24ACAF4A0013D91D /* Network */,
 				94725F2624ACAF4A0013D91D /* Utilities */,
@@ -184,8 +209,11 @@
 		94725F2624ACAF4A0013D91D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				94725F9824ADBF150013D91D /* UIImage+URL.swift */,
 				94725F2D24ACAF4A0013D91D /* UIView+Nib.swift */,
 				94725F2E24ACAF4A0013D91D /* CollectionExtensions.swift */,
+				94725F9A24ADC13C0013D91D /* UIImage+Tint.swift */,
+				94725FA524ADC7DB0013D91D /* UIView+identifier.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -193,6 +221,7 @@
 		94725F2F24ACAF4A0013D91D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				94725F7C24AD6E330013D91D /* Cell */,
 				94725F3024ACAF4A0013D91D /* PopupDialog */,
 				94725F3524ACAF4A0013D91D /* Navigation */,
 				94725F3724ACAF4A0013D91D /* Loader */,
@@ -230,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				94725F5324ACE7B80013D91D /* Dashboard */,
+				94725F9124ADBBCA0013D91D /* Product */,
 				94725F5B24ACEA740013D91D /* Home */,
 			);
 			path = Module;
@@ -256,6 +286,7 @@
 		94725F5B24ACEA740013D91D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				94725FA224ADC6900013D91D /* Data Source */,
 				94725F6B24AD07090013D91D /* Model */,
 				94725F6624AD06280013D91D /* Network */,
 				94725F7524AD09B90013D91D /* Unit Tests */,
@@ -270,6 +301,7 @@
 			children = (
 				94725F5C24ACEA920013D91D /* HomeViewController.swift */,
 				94725F5D24ACEA920013D91D /* HomeViewController.xib */,
+				94725F8A24ADBA7D0013D91D /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,6 +320,7 @@
 			children = (
 				94725F6724AD06500013D91D /* HomeRequest.swift */,
 				94725F6924AD06B30013D91D /* HomeService.swift */,
+				94725F7F24AD9A610013D91D /* HomeServiceInterface.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -319,11 +352,78 @@
 			path = "Unit Tests";
 			sourceTree = "<group>";
 		};
+		94725F7C24AD6E330013D91D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				94725F7D24AD6E440013D91D /* CellInterface.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		94725F8A24ADBA7D0013D91D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				94725F9024ADBBAB0013D91D /* Category */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		94725F9024ADBBAB0013D91D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				94725F8B24ADBAC40013D91D /* CategoriesTableViewCell.swift */,
+				94725F8C24ADBAC40013D91D /* CategoriesTableViewCell.xib */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		94725F9124ADBBCA0013D91D /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				94725F9F24ADC65F0013D91D /* View */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		94725F9C24ADC1C70013D91D /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				94725F9D24ADC1DC0013D91D /* CoreImageFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		94725F9F24ADC65F0013D91D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94725FA024ADC6670013D91D /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94725FA024ADC6670013D91D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				94725F9624ADBE3F0013D91D /* ProductCellViewModel.swift */,
+				94725F9224ADBBEC0013D91D /* ProductTableViewCell.swift */,
+				94725F9324ADBBEC0013D91D /* ProductTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		94725FA224ADC6900013D91D /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				94725FA324ADC6A60013D91D /* HomeViewBinderDataSource.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
 		9DCF42A0F69C40643961D9A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				93DC2B9CD2BF2F9CA1D63924 /* Pods_ECommerce.framework */,
-				05B06C4F1BDC3403BA3B2511 /* libPods-ECommerceTests.a */,
+				2AA2213447228093ADB12D49 /* Pods_ECommerceTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -369,6 +469,7 @@
 				94725F0B24AC9C130013D91D /* Sources */,
 				94725F0C24AC9C130013D91D /* Frameworks */,
 				94725F0D24AC9C130013D91D /* Resources */,
+				FFC316E8C0C198D9E071A3C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -426,6 +527,8 @@
 				94725F7924AD0B070013D91D /* MockHome.json in Resources */,
 				94725F0924AC9C120013D91D /* LaunchScreen.storyboard in Resources */,
 				94725F5824ACE8260013D91D /* TabBarController.xib in Resources */,
+				94725F9524ADBBEC0013D91D /* ProductTableViewCell.xib in Resources */,
+				94725F8E24ADBAC40013D91D /* CategoriesTableViewCell.xib in Resources */,
 				94725F0624AC9C120013D91D /* Assets.xcassets in Resources */,
 				94725F5F24ACEA920013D91D /* HomeViewController.xib in Resources */,
 			);
@@ -502,6 +605,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FFC316E8C0C198D9E071A3C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ECommerceTests/Pods-ECommerceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ECommerceTests/Pods-ECommerceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ECommerceTests/Pods-ECommerceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -509,14 +629,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94725F7E24AD6E440013D91D /* CellInterface.swift in Sources */,
 				94725F6324ACFA1B0013D91D /* HomeViewModel.swift in Sources */,
+				94725F8D24ADBAC40013D91D /* CategoriesTableViewCell.swift in Sources */,
+				94725F8024AD9A610013D91D /* HomeServiceInterface.swift in Sources */,
 				94725F3D24ACAF4A0013D91D /* APIRequestType.swift in Sources */,
 				94725F4824ACAF4A0013D91D /* CollectionExtensions.swift in Sources */,
 				94725F4C24ACAF4A0013D91D /* DGNavigationController.swift in Sources */,
 				94725F5A24ACE8260013D91D /* TabBarController.swift in Sources */,
+				94725F9724ADBE400013D91D /* ProductCellViewModel.swift in Sources */,
 				94725F4E24ACAF4A0013D91D /* Loader.swift in Sources */,
+				94725F9B24ADC13C0013D91D /* UIImage+Tint.swift in Sources */,
+				94725F9424ADBBEC0013D91D /* ProductTableViewCell.swift in Sources */,
+				94725FA424ADC6A60013D91D /* HomeViewBinderDataSource.swift in Sources */,
 				94725F4024ACAF4A0013D91D /* NetworkError.swift in Sources */,
 				94725F4D24ACAF4A0013D91D /* DGLoaderView.swift in Sources */,
+				94725FA624ADC7DB0013D91D /* UIView+identifier.swift in Sources */,
 				94725F3F24ACAF4A0013D91D /* APIRequest.swift in Sources */,
 				94725F6524ACFA3E0013D91D /* HomeViewModelType.swift in Sources */,
 				94725F4924ACAF4A0013D91D /* PopupDialog.swift in Sources */,
@@ -524,6 +652,7 @@
 				94725F7224AD07C10013D91D /* Product.swift in Sources */,
 				94725F4724ACAF4A0013D91D /* UIView+Nib.swift in Sources */,
 				94725F5E24ACEA920013D91D /* HomeViewController.swift in Sources */,
+				94725F9E24ADC1DC0013D91D /* CoreImageFactory.swift in Sources */,
 				94725F6A24AD06B30013D91D /* HomeService.swift in Sources */,
 				94725F3E24ACAF4A0013D91D /* NetworkResult.swift in Sources */,
 				94725F4F24ACAF4A0013D91D /* DGFullScreenLoaderView.swift in Sources */,
@@ -531,6 +660,7 @@
 				94725F5924ACE8260013D91D /* TabBarWireframe.swift in Sources */,
 				94725F6824AD06500013D91D /* HomeRequest.swift in Sources */,
 				94725F3C24ACAF4A0013D91D /* APIRequestDecoder.swift in Sources */,
+				94725F9924ADBF150013D91D /* UIImage+URL.swift in Sources */,
 				94725F7424AD09370013D91D /* ResponseModel.swift in Sources */,
 				94725F7024AD078C0013D91D /* Category.swift in Sources */,
 			);
@@ -617,7 +747,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -671,7 +801,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -11,7 +11,7 @@ import Foundation
 
 struct Product: Decodable {
     var id: String
-    var imageUrl: String?
+    var imageUrl: URL?
     var title: String?
     var description: String?
     var price: String?

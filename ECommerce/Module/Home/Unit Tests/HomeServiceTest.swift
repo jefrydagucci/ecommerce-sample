@@ -22,7 +22,7 @@ class HomeServiceTests: XCTestCase {
     }
     
     func testHomeServiceGetHome() {
-        let expect = expectation(description: "get correct data from json and transform it to contacts")
+        let expect = expectation(description: "get correct data from json")
         let service = HomeService()
         stub(condition: { (request:URLRequest) -> Bool in
             return request.url?.absoluteString == "https://private-4639ce-ecommerce56.apiary-mock.com/home"

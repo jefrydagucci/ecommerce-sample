@@ -1,0 +1,16 @@
+///**
+/**
+ECommerce
+Created by: Jefry Eko Mulya on 02/07/20
+https://github.com/jefrydagucci
+Copyright (c) 2020 DAGUCI
+
+*/
+
+import Foundation
+
+struct ProductCellViewModel: CellInterface {
+    var title: String?
+    var imageURL: URL?
+    var loved: Bool
+}

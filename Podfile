@@ -22,5 +22,8 @@ end
 
 target 'ECommerceTests' do
   inherit! :search_paths
+  use_frameworks!
+  
   testingPod
+  dataProcessingPod
 end

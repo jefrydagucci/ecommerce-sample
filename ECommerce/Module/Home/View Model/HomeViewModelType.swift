@@ -8,6 +8,7 @@ Copyright (c) 2020 DAGUCI
 */
 
 import Foundation
+import Bond
 
 protocol HomeViewModelType {
     var inputs: HomeViewModelInputs { get }
@@ -15,9 +16,9 @@ protocol HomeViewModelType {
 }
 
 protocol HomeViewModelInputs {
-    
+    func onViewDidLoad()
 }
 
-protocol HomeViewModelOutputs {
-    
+protocol HomeViewModelOutputs: class {
+    var items: MutableObservableArray2D<String?, CellInterface> { get }
 }
