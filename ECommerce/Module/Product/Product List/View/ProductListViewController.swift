@@ -63,6 +63,15 @@ private extension ProductListViewController {
         viewModel.outputs.showSearchSignal.bind(to: self) { (vc, show) in
             vc.navigationItem.titleView = show ? vc.searchBar : nil
         }.dispose(in: bag)
+        viewModel.outputs.showProductSignal
+            .bind(to: self) { (vc, product) in
+                vc.hidesBottomBarWhenPushed = true
+                ProductDetailWireframe().show(product: product, from: vc)
+        }.dispose(in: bag)
+        
+        tableView.reactive.selectedRowIndexPath.bind(to: self) { (vc, indexPath) in
+            vc.viewModel.inputs.onSelect(indexPath: indexPath)
+        }.dispose(in: bag)
     }
 }
 

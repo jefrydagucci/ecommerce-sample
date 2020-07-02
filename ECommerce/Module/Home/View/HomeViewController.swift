@@ -69,6 +69,16 @@ private extension HomeViewController {
                 ProductListWireframe().show(products: products, from: vc)
                 vc.searchBar.endEditing(true)
         }.dispose(in: bag)
+        viewModel.outputs.showProductSignal
+            .bind(to: self) { (vc, product) in
+                vc.hidesBottomBarWhenPushed = true
+                ProductDetailWireframe().show(product: product, from: vc)
+                vc.hidesBottomBarWhenPushed = false
+        }.dispose(in: bag)
+        
+        tableView.reactive.selectedRowIndexPath.bind(to: self) { (vc, indexPath) in
+            vc.viewModel.inputs.onSelect(indexPath: indexPath)
+        }.dispose(in: bag)
     }
 }
 

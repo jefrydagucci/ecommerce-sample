@@ -18,9 +18,14 @@ final class ProductListViewModel: ProductListViewModelOutputs {
     var showSearchSignal: Signal<Bool, Never> {
         return showSearchSubject.toSignal()
     }
+    var showProductSignal: Signal<Product, Never> {
+        return showProductSubject.toSignal()
+    }
     
     private var products: [Product]
     private var showSearchSubject = Subject<Bool, Never>()
+    private var showProductSubject = Subject<Product, Never>()
+    private var keyword: String = ""
     
     init(products: [Product]) {
         self.products = products
@@ -34,7 +39,14 @@ extension ProductListViewModel: ProductListViewModelInputs {
     }
     
     func onSearch(text: String) {
+        keyword = text
         setupItems(products: filtering(products: products, keyword: text))
+    }
+    
+    func onSelect(indexPath: IndexPath) {
+        let filtered = filtering(products: products, keyword: keyword)
+        guard let product = filtered[safe: indexPath.row] else { return }
+        showProductSubject.send(product)
     }
 }
 

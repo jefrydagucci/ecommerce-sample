@@ -18,9 +18,11 @@ protocol ProductListViewModelType {
 protocol ProductListViewModelInputs {
     func onViewDidLoad()
     func onSearch(text: String)
+    func onSelect(indexPath: IndexPath)
 }
 
 protocol ProductListViewModelOutputs {
     var items: MutableObservableArray2D<String?, CellInterface> { get }
     var showSearchSignal: Signal<Bool, Never> { get }
+    var showProductSignal: Signal<Product, Never> { get }
 }

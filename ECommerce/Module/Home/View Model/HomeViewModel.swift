@@ -18,8 +18,13 @@ final class HomeViewModel: HomeViewModelOutputs {
         return showProductsSubject.toSignal()
     }
     
+    var showProductSignal: Signal<Product, Never> {
+        return showProductSubject.toSignal()
+    }
+    
     var homeService: HomeServiceInterface
     private var showProductsSubject = Subject<[Product], Never>()
+    private var showProductSubject = Subject<Product, Never>()
     private var processingGroup = DispatchGroup()
     private var homeModel: HomeModel?
     private var products: [Product] {
@@ -32,12 +37,19 @@ final class HomeViewModel: HomeViewModelOutputs {
 }
 
 extension HomeViewModel: HomeViewModelInputs {
+    
     func onViewDidLoad() {
         fetch()
     }
     
     func onSearchBeginEditing() {
         showProductsSubject.send(products)
+    }
+    
+    func onSelect(indexPath: IndexPath) {
+        if let product = homeModel?.productPromo[safe: indexPath.row] {
+            showProductSubject.send(product)
+        }
     }
 }
 
