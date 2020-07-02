@@ -5,6 +5,10 @@ def networkPod
   pod 'Alamofire', '4.7.3'
 end
 
+def googlePod
+  pod 'GoogleSignIn', '5.0.2'
+end
+
 def dataProcessingPod
   pod 'Bond', '7.5.0'
 end
@@ -18,6 +22,7 @@ target 'ECommerce' do
 
   networkPod
   dataProcessingPod
+  googlePod
 end
 
 target 'ECommerceTests' do

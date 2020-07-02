@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0AEFFF022472287D4EF0EE40 /* Pods_ECommerceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA2213447228093ADB12D49 /* Pods_ECommerceTests.framework */; };
+		9463735524ADF3FB007207E0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9463735324ADF3FB007207E0 /* LoginViewController.swift */; };
+		9463735624ADF3FB007207E0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9463735424ADF3FB007207E0 /* LoginViewController.xib */; };
+		9463735A24ADF41D007207E0 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9463735924ADF41D007207E0 /* LoginWireframe.swift */; };
+		9463735D24ADF461007207E0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9463735C24ADF461007207E0 /* LoginViewModel.swift */; };
+		9463735F24ADF472007207E0 /* LoginViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9463735E24ADF472007207E0 /* LoginViewModelType.swift */; };
+		9463736224ADFC77007207E0 /* GoogleSignManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9463736124ADFC77007207E0 /* GoogleSignManager.swift */; };
 		94725EFD24AC9C0E0013D91D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725EFC24AC9C0E0013D91D /* AppDelegate.swift */; };
 		94725F0624AC9C120013D91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94725F0524AC9C120013D91D /* Assets.xcassets */; };
 		94725F0924AC9C120013D91D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94725F0724AC9C120013D91D /* LaunchScreen.storyboard */; };
@@ -74,6 +80,12 @@
 		2AA2213447228093ADB12D49 /* Pods_ECommerceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECommerceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85ECBB854240D16C674104AB /* Pods-ECommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECommerceTests.debug.xcconfig"; path = "Target Support Files/Pods-ECommerceTests/Pods-ECommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93DC2B9CD2BF2F9CA1D63924 /* Pods_ECommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9463735324ADF3FB007207E0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9463735424ADF3FB007207E0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		9463735924ADF41D007207E0 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		9463735C24ADF461007207E0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9463735E24ADF472007207E0 /* LoginViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelType.swift; sourceTree = "<group>"; };
+		9463736124ADFC77007207E0 /* GoogleSignManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignManager.swift; sourceTree = "<group>"; };
 		94725EF924AC9C0E0013D91D /* ECommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94725EFC24AC9C0E0013D91D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94725F0524AC9C120013D91D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -150,6 +162,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9463735224ADF3CA007207E0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9463735B24ADF455007207E0 /* View Model */,
+				9463735824ADF40C007207E0 /* Wireframe */,
+				9463735724ADF405007207E0 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9463735724ADF405007207E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9463735324ADF3FB007207E0 /* LoginViewController.swift */,
+				9463735424ADF3FB007207E0 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9463735824ADF40C007207E0 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				9463735924ADF41D007207E0 /* LoginWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		9463735B24ADF455007207E0 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				9463735C24ADF461007207E0 /* LoginViewModel.swift */,
+				9463735E24ADF472007207E0 /* LoginViewModelType.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		9463736024ADFC49007207E0 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				9463736124ADFC77007207E0 /* GoogleSignManager.swift */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
 		94725EF024AC9C0E0013D91D = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +324,8 @@
 		94725F5224ACE7A90013D91D /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				9463736024ADFC49007207E0 /* Google */,
+				9463735224ADF3CA007207E0 /* Login */,
 				94725FA824ADD9450013D91D /* Category */,
 				94725F5324ACE7B80013D91D /* Dashboard */,
 				94725F9124ADBBCA0013D91D /* Product */,
@@ -490,6 +548,7 @@
 				94725EF624AC9C0E0013D91D /* Frameworks */,
 				94725EF724AC9C0E0013D91D /* Resources */,
 				5A6E284AF1ACA1CF68D443EF /* [CP] Embed Pods Frameworks */,
+				09A16D9970BDB91FDE5B56D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -571,6 +630,7 @@
 				94725F8E24ADBAC40013D91D /* CategoriesTableViewCell.xib in Resources */,
 				94725F0624AC9C120013D91D /* Assets.xcassets in Resources */,
 				94725F5F24ACEA920013D91D /* HomeViewController.xib in Resources */,
+				9463735624ADF3FB007207E0 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +644,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		09A16D9970BDB91FDE5B56D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ECommerce/Pods-ECommerce-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ECommerce/Pods-ECommerce-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ECommerce/Pods-ECommerce-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5A6E284AF1ACA1CF68D443EF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -673,7 +750,9 @@
 				94725F6324ACFA1B0013D91D /* HomeViewModel.swift in Sources */,
 				94725F8D24ADBAC40013D91D /* CategoriesTableViewCell.swift in Sources */,
 				94725F8024AD9A610013D91D /* HomeServiceInterface.swift in Sources */,
+				9463736224ADFC77007207E0 /* GoogleSignManager.swift in Sources */,
 				94725F3D24ACAF4A0013D91D /* APIRequestType.swift in Sources */,
+				9463735D24ADF461007207E0 /* LoginViewModel.swift in Sources */,
 				94725F4824ACAF4A0013D91D /* CollectionExtensions.swift in Sources */,
 				94725F4C24ACAF4A0013D91D /* DGNavigationController.swift in Sources */,
 				94725F5A24ACE8260013D91D /* TabBarController.swift in Sources */,
@@ -684,15 +763,18 @@
 				94725FA424ADC6A60013D91D /* HomeViewBinderDataSource.swift in Sources */,
 				94725F4024ACAF4A0013D91D /* NetworkError.swift in Sources */,
 				94725F4D24ACAF4A0013D91D /* DGLoaderView.swift in Sources */,
+				9463735F24ADF472007207E0 /* LoginViewModelType.swift in Sources */,
 				94725FA624ADC7DB0013D91D /* UIView+identifier.swift in Sources */,
 				94725F3F24ACAF4A0013D91D /* APIRequest.swift in Sources */,
 				94725F6524ACFA3E0013D91D /* HomeViewModelType.swift in Sources */,
+				9463735A24ADF41D007207E0 /* LoginWireframe.swift in Sources */,
 				94725FB424ADDD790013D91D /* CategoriesCellViewModel.swift in Sources */,
 				94725F4924ACAF4A0013D91D /* PopupDialog.swift in Sources */,
 				94725EFD24AC9C0E0013D91D /* AppDelegate.swift in Sources */,
 				94725F7224AD07C10013D91D /* Product.swift in Sources */,
 				94725F4724ACAF4A0013D91D /* UIView+Nib.swift in Sources */,
 				94725F5E24ACEA920013D91D /* HomeViewController.swift in Sources */,
+				9463735524ADF3FB007207E0 /* LoginViewController.swift in Sources */,
 				94725F9E24ADC1DC0013D91D /* CoreImageFactory.swift in Sources */,
 				94725F6A24AD06B30013D91D /* HomeService.swift in Sources */,
 				94725F3E24ACAF4A0013D91D /* NetworkResult.swift in Sources */,
